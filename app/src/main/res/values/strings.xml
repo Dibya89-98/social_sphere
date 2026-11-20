@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SocialSphere</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vyro_logo">Vyro Logo</string>
+    <string name="vyro">VYRO</string>
+    <string name="connect_create_express">Connect. Create. Express.</string>
+    <string name="suryapratap">suryapratap</string>
+    <string name="preferences_settings">Preferences Settings</string>
+    <string name="settings">Settings</string>
+    <string name="welcome_back">Welcome back,</string>
+    <string name="surya_pratap">Surya Pratap</string>
+    <string name="projects">PROJECTS</string>
+    <string name="secure_socket_connection_established_with_backend_cluster">Secure socket connection established with backend cluster.</string>
+    <string name="api_gateway_connected">API Gateway Connected</string>
+    <string name="message">Message...</string>
+    <string name="send">Send</string>
+    <string name="active_now">Active now</string>
+    <string name="aarav_sharma">Aarav Sharma</string>
+    <string name="back">Back</string>
+    <string name="hart">❤️</string>
+    <string name="funy">😂</string>
+    <string name="fire">🔥</string>
+    <string name="ok">👍</string>
+    <string name="search_messages">Search messages...</string>
+    <string name="messages">Messages</string>
+    <string name="record_or_upload_a_short_video">Record or upload a short video</string>
+    <string name="new_moment">New Moment</string>
+    <string name="share_a_photo_with_your_followers">Share a photo with your followers</string>
+    <string name="new_post">New Post</string>
+    <string name="create">Create</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="plus">+</string>
+    <string name="create_studio">Create Studio</string>
+</resources>

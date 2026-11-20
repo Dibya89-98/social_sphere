@@ -1,0 +1,66 @@
+<!-- res/drawable/ic_vyro_neon_v.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Outer 'V' Silhouette -->
+    <path
+        android:pathData="M28,32 C42,24 54,38 60,62 C64,34 76,16 92,16 C96,44 96,78 86,96 C72,106 50,92 28,32 Z"
+        android:strokeWidth="5.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="20"
+                android:startY="20"
+                android:endX="100"
+                android:endY="100"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00E5B8" />
+                <item android:offset="0.5" android:color="#2B7FFF" />
+                <item android:offset="1.0" android:color="#6B38FB" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Organic Wave Line 1 -->
+    <path
+        android:pathData="M38,40 C50,44 60,74 69,48 C82,28 82,28 82,28"
+        android:strokeWidth="3"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="38"
+                android:startY="40"
+                android:endX="82"
+                android:endY="48"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00E5B8" />
+                <item android:offset="0.5" android:color="#2B7FFF" />
+                <item android:offset="1.0" android:color="#6B38FB" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Organic Wave Line 2 -->
+    <path
+        android:pathData="M44,48 C56,56 65,82 76,58 C82,46 84,40 84,40"
+        android:strokeWidth="3"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="44"
+                android:startY="48"
+                android:endX="84"
+                android:endY="58"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00E5B8" />
+                <item android:offset="0.5" android:color="#2B7FFF" />
+                <item android:offset="1.0" android:color="#6B38FB" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

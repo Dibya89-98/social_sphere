@@ -1,0 +1,4 @@
+<!-- res/color/text_debossed.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#7D7B76" />
+</selector>

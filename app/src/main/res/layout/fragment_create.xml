@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0F14"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="sans-serif-bold"
+                android:text="@string/create_studio"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/btnSharePost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:text="Share"
+                android:textColor="#3B82F6"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Mode Selector: Post | Story | Reel | Live -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvModePost"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_pill_dark"
+                android:gravity="center"
+                android:text="Post"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-bold" />
+            <TextView
+                android:id="@+id/tvModeStory"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Story"
+                android:textColor="#6B7280"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvModeReel"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Reel"
+                android:textColor="#6B7280"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvModeLive"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Live"
+                android:textColor="#6B7280"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Media Preview Card -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_post_card">
+
+            <ImageView
+                android:id="@+id/ivPostImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_vyro_neon_v" />
+
+            <TextView
+                android:id="@+id/btnReplaceMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="14dp"
+                android:background="@drawable/bg_pill_dark"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:text="📷 Replace media"
+                android:textColor="#E5E7EB"
+                android:textSize="11sp" />
+        </FrameLayout>
+
+        <!-- Caption Box -->
+        <EditText
+            android:id="@+id/etCaption"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="14dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="Write a caption for your post..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6B7280"
+            android:textSize="14sp" />
+
+        <!-- AI Polish Card -->
+        <LinearLayout
+            android:id="@+id/btnPolishAi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_post_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✦"
+                android:textColor="#3B82F6"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="Polish with VYRO AI"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Improve your caption and suggest hashtags"
+                    android:textColor="#6B7280"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textColor="#6B7280"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Metadata Options -->
+        <TextView
+            android:id="@+id/btnTagPeople"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="👥  Tag people"
+            android:textColor="#E5E7EB"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/btnAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="📍  Add location"
+            android:textColor="#E5E7EB"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/btnAddMusic"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="🎵  Add music"
+            android:textColor="#E5E7EB"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

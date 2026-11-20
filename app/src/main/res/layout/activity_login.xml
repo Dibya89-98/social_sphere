@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Brand Header -->
+        <ImageView
+            android:id="@+id/imgLoginLogo"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:contentDescription="Vyro Logo"
+            android:src="@drawable/ic_vyro_neon_v" />
+
+        <TextView
+            android:id="@+id/txtAuthTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.1"
+            android:text="WELCOME BACK"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtAuthSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="28dp"
+            android:text="Sign in to continue to VYRO"
+            android:textColor="#8C93A3"
+            android:textSize="13sp" />
+
+        <!-- Claymorphic Form Container -->
+        <LinearLayout
+            android:id="@+id/authCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tech_clay_card"
+            android:elevation="16dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Full Name Input (Hidden in Login mode, visible in Signup mode) -->
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_tech_input"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#5A6173"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!-- Email Input -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_tech_input"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#5A6173"
+                android:textSize="14sp" />
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_tech_input"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#5A6173"
+                android:textSize="14sp" />
+
+            <!-- Forgot Password -->
+            <TextView
+                android:id="@+id/txtForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="24dp"
+                android:text="Forgot Password?"
+                android:textColor="#00E5B8"
+                android:textSize="12sp" />
+
+            <!-- Neon Gradient Submit Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_neon_button"
+                android:fontFamily="sans-serif-bold"
+                android:letterSpacing="0.08"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Toggle Login / Sign Up -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTogglePrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textColor="#8C93A3"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtToggleMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:text="Sign Up"
+                android:textColor="#00E5B8"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

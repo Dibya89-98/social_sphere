@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <!-- Ambient Glow / Sci-Fi Backlight Accents -->
+    <View
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="-40dp"
+        android:background="@drawable/ic_vyro_neon_v"
+        android:alpha="0.12" />
+
+    <!-- Central Tech/Claymorphic Card Container -->
+    <LinearLayout
+        android:id="@+id/clayCard"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_tech_clay_card"
+        android:elevation="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Glowing 'V' Logo Icon -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_vyro_neon_v"
+            android:contentDescription="Vyro Logo" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Debossed "VYRO" Wordmark -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.25"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.2"
+            android:text="VYRO"
+            android:textColor="#3D4352"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/txtTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"
+            android:text="Connect. Create. Express."
+            android:textColor="#8C93A3"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <!-- Bottom Progress Bar Track -->
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:background="#1C2130">
+
+        <!-- Animated Progress Fill -->
+        <View
+            android:id="@+id/progressBarFill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_loading_bar" />
+    </FrameLayout>
+
+</RelativeLayout>

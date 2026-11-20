@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:orientation="vertical">
+
+    <!-- Quick Emoji Picker (Hidden until long-pressed) -->
+    <LinearLayout
+        android:id="@+id/reactionPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_bubble_received"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="6dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/reactHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="6dp"
+            android:text="❤️"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/reactLaugh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="6dp"
+            android:text="😂"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/reactFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="6dp"
+            android:text="🔥"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/reactLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="6dp"
+            android:text="👍"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Message Text Bubble -->
+    <TextView
+        android:id="@+id/tvMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <!-- Active Reactions Pill -->
+    <TextView
+        android:id="@+id/tvReactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_bubble_received"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>

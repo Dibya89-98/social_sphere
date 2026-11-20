@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvSheetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Select Item"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_pill_dark"
+        android:hint="Search..."
+        android:paddingHorizontal="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#8A94A6"
+        android:textSize="14sp" />
+
+    <!-- Dummy Option 1 -->
+    <TextView
+        android:id="@+id/tvOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="14dp"
+        android:text="Option 1"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <!-- Dummy Option 2 -->
+    <TextView
+        android:id="@+id/tvOption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="14dp"
+        android:text="Option 2"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <!-- Dummy Option 3 -->
+    <TextView
+        android:id="@+id/tvOption3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="14dp"
+        android:text="Option 3"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+</LinearLayout>
